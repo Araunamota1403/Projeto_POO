@@ -3,6 +3,7 @@ package com.example.spcapi.services;
 import com.example.spcapi.models.Device;
 import com.example.spcapi.models.ApiResponse;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

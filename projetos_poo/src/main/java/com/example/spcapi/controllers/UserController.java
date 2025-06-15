@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.spcapi.dtos.LoginRequestDTO;
+import com.example.spcapi.services.UserService;
+
 // Outras importações, se necessário
 
 @RestController

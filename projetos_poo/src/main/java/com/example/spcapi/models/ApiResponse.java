@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 public class ApiResponse<T> {
-    private T body;
+    private Body<T> body;
 
     @Data
     public static class Body<T> {
