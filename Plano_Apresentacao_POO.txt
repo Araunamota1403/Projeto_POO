@@ -1,0 +1,161 @@
+====================================================================
+           PLANO DE APRESENTAÇÃO - PROJETO SPC API 
+                   Programação Orientada a Objetos
+                        Tempo Total: 15 minutos
+====================================================================
+
+📌 OBJETIVO: Demonstrar como nossa API Spring Boot aplicou os conceitos de POO
+
+====================================================================
+                          DIVISÃO POR MEMBROS
+====================================================================
+
+👤 MEMBRO 1 - INTRODUÇÃO E VISÃO GERAL (3-4 minutos)
+--------------------------------------------------------------------
+🎯 Responsabilidades:
+- Apresentar o projeto: "API SPC para consulta de dispositivos"
+- Explicar o que faz: Login de usuários + consulta de dispositivos
+- Mostrar a estrutura de pastas do projeto
+- Demonstrar que funciona: rodar o projeto e mostrar que está no ar
+
+📝 Pontos-chave para falar:
+• "Criamos uma API REST usando Spring Boot"
+• "A API simula um sistema de consulta de dispositivos com autenticação"
+• "Vamos mostrar como aplicamos os 4 pilares da POO neste projeto"
+
+🛠️ O que mostrar:
+- Estrutura de pastas no VS Code
+- Comando: mvn spring-boot:run
+- Browser: http://localhost:8080 (mostrar que está rodando)
+
+====================================================================
+
+👤 MEMBRO 2 - ENCAPSULAMENTO E CLASSES (3-4 minutos)
+--------------------------------------------------------------------
+🎯 Responsabilidades:
+- Explicar ENCAPSULAMENTO no projeto
+- Mostrar as classes principais (User, Device, ApiResponse)
+- Demonstrar atributos privados e métodos públicos
+
+📝 Pontos-chave para falar:
+• "ENCAPSULAMENTO: escondemos os dados internos das classes"
+• "Usamos private para atributos, public para métodos"
+• "Isso protege os dados e controla como são acessados"
+
+🛠️ Arquivos para mostrar:
+- src/main/java/com/example/spcapi/models/User.java
+- src/main/java/com/example/spcapi/models/Device.java
+- Destacar: private String email, public String getEmail()
+
+💡 Frase de exemplo:
+"A classe User tem email privado, só podemos acessar via getEmail()"
+
+====================================================================
+
+👤 MEMBRO 3 - ABSTRAÇÃO E HERANÇA (3-4 minutos)
+--------------------------------------------------------------------
+🎯 Responsabilidades:
+- Explicar ABSTRAÇÃO no projeto
+- Mostrar como dividimos responsabilidades em camadas
+- Explicar HERANÇA (mesmo que básica, como Exception classes)
+
+📝 Pontos-chave para falar:
+• "ABSTRAÇÃO: separamos responsabilidades em diferentes classes"
+• "Controller → Service → Model (cada um tem sua função)"
+• "HERANÇA: nossas exceções herdam de RuntimeException"
+
+🛠️ Arquivos para mostrar:
+- UserController.java (recebe requisições)
+- UserService.java (processa lógica)
+- InvalidSerialException.java (herda de RuntimeException)
+
+💡 Frase de exemplo:
+"Controller cuida da web, Service cuida da lógica, Model guarda dados"
+
+====================================================================
+
+👤 MEMBRO 4 - POLIMORFISMO E DEMONSTRAÇÃO PRÁTICA (4-5 minutos)
+--------------------------------------------------------------------
+🎯 Responsabilidades:
+- Explicar POLIMORFISMO no projeto
+- Demonstração PRÁTICA usando Postman
+- Conclusão do projeto
+
+📝 Pontos-chave para falar:
+• "POLIMORFISMO: mesmos métodos, comportamentos diferentes"
+• "ResponseEntity<String> vs ResponseEntity<DeviceResponseDTO>"
+• "Exceptions são tratadas de forma polimórfica"
+
+🛠️ O que mostrar:
+- GlobalExceptionHandler.java (trata diferentes exceções)
+- DEMO PRÁTICA no Postman:
+  1. Login com credenciais válidas
+  2. Buscar dispositivo com token
+  3. Buscar sem token (erro)
+  4. Serial inválido (erro diferente)
+
+💡 Frase de exemplo:
+"Diferentes erros são tratados automaticamente pelo mesmo sistema"
+
+====================================================================
+                            DICAS IMPORTANTES
+====================================================================
+
+⏰ CONTROLE DE TEMPO:
+- Cada membro: máximo 4 minutos
+- Deixar 1 minuto para perguntas
+- Praticar antes para não ultrapassar
+
+🎯 FOCO EM POO:
+- SEMPRE conectar o que estão mostrando com conceitos de POO
+- Usar as palavras: Encapsulamento, Herança, Polimorfismo, Abstração
+- Explicar POR QUE usamos POO (organização, reutilização, manutenção)
+
+📱 MATERIAL NECESSÁRIO:
+- Computador com projeto rodando
+- Postman instalado e collection importada
+- Slides simples (opcional, código já é visual)
+
+🔧 PREPARAÇÃO:
+- Todos devem saber rodar: mvn spring-boot:run
+- Testar a collection do Postman antes
+- Cada membro deve conhecer seu arquivo principal
+
+====================================================================
+                          FRASES DE TRANSIÇÃO
+====================================================================
+
+Membro 1 → Membro 2:
+"Agora vamos ver como organizamos nosso código usando Encapsulamento"
+
+Membro 2 → Membro 3:
+"Além de encapsular, também aplicamos Abstração e Herança"
+
+Membro 3 → Membro 4:
+"Para finalizar, vamos ver Polimorfismo e como tudo funciona na prática"
+
+====================================================================
+                             CONCLUSÃO FINAL
+====================================================================
+
+"Este projeto demonstra que POO não é só teoria - usamos os 4 pilares
+para criar uma aplicação real, organizada e funcional. POO nos ajudou a:
+- Organizar melhor o código (Encapsulamento)
+- Dividir responsabilidades (Abstração) 
+- Reutilizar código (Herança)
+- Tratar diferentes situações de forma uniforme (Polimorfismo)"
+
+====================================================================
+                          POSSÍVEIS PERGUNTAS
+====================================================================
+
+P: "Por que usaram Spring Boot?"
+R: "É um framework que já implementa muitos padrões de POO para nós"
+
+P: "O projeto é muito simples?"
+R: "Sim, mas mostra claramente os conceitos de POO na prática"
+
+P: "Como validam os dados?"
+R: "Usamos classes específicas com responsabilidades bem definidas"
+
+====================================================================

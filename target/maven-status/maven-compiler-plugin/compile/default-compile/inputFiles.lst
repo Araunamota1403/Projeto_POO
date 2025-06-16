@@ -1,0 +1,17 @@
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/SpcApiApplication.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/utils/SerialValidator.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/dtos/DeviceResponseDTO.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/config/WebConfig.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/services/DeviceService.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/exceptions/GlobalExceptionHandler.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/services/UserService.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/exceptions/MissingTokenException.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/exceptions/InvalidSerialException.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/controllers/UserController.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/utils/DateUtils.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/dtos/LoginRequestDTO.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/models/User.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/models/Device.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/models/ApiResponse.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/controllers/DeviceController.java
+/Users/gabriel/Programming/java/Projeto_POO/src/main/java/com/example/spcapi/exceptions/ApiException.java
