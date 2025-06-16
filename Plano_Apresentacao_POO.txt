@@ -10,67 +10,74 @@
                           DIVISÃO POR MEMBROS
 ====================================================================
 
-👤 MEMBRO 1 - INTRODUÇÃO E VISÃO GERAL (3-4 minutos)
+👤 MEMBRO 1 - INTRODUÇÃO E ENCAPSULAMENTO (3-4 minutos)
 --------------------------------------------------------------------
 🎯 Responsabilidades:
 - Apresentar o projeto: "API SPC para consulta de dispositivos"
 - Explicar o que faz: Login de usuários + consulta de dispositivos
 - Mostrar a estrutura de pastas do projeto
+- Explicar ENCAPSULAMENTO com exemplo prático
 - Demonstrar que funciona: rodar o projeto e mostrar que está no ar
 
 📝 Pontos-chave para falar:
 • "Criamos uma API REST usando Spring Boot"
 • "A API simula um sistema de consulta de dispositivos com autenticação"
-• "Vamos mostrar como aplicamos os 4 pilares da POO neste projeto"
+• "ENCAPSULAMENTO: protegemos os dados das nossas classes"
+• "Usamos private para esconder, public para permitir acesso"
 
 🛠️ O que mostrar:
 - Estrutura de pastas no VS Code
+- src/main/java/com/example/spcapi/models/User.java (mostrar private email)
 - Comando: mvn spring-boot:run
 - Browser: http://localhost:3000 (mostrar que está rodando)
 
-====================================================================
-
-👤 MEMBRO 2 - ENCAPSULAMENTO E CLASSES (3-4 minutos)
---------------------------------------------------------------------
-🎯 Responsabilidades:
-- Explicar ENCAPSULAMENTO no projeto
-- Mostrar as classes principais (User, Device, ApiResponse)
-- Demonstrar atributos privados e métodos públicos
-
-📝 Pontos-chave para falar:
-• "ENCAPSULAMENTO: escondemos os dados internos das classes"
-• "Usamos private para atributos, public para métodos"
-• "Isso protege os dados e controla como são acessados"
-
-🛠️ Arquivos para mostrar:
-- src/main/java/com/example/spcapi/models/User.java
-- src/main/java/com/example/spcapi/models/Device.java
-- Destacar: private String email, public String getEmail()
-
 💡 Frase de exemplo:
-"A classe User tem email privado, só podemos acessar via getEmail()"
+"Na classe User, o email é privado - só podemos acessar via getEmail()"
 
 ====================================================================
 
-👤 MEMBRO 3 - ABSTRAÇÃO E HERANÇA (3-4 minutos)
+👤 MEMBRO 2 - ABSTRAÇÃO E ORGANIZAÇÃO (3-4 minutos)
 --------------------------------------------------------------------
 🎯 Responsabilidades:
 - Explicar ABSTRAÇÃO no projeto
 - Mostrar como dividimos responsabilidades em camadas
-- Explicar HERANÇA (mesmo que básica, como Exception classes)
+- Demonstrar as classes principais (Device, ApiResponse)
 
 📝 Pontos-chave para falar:
 • "ABSTRAÇÃO: separamos responsabilidades em diferentes classes"
-• "Controller → Service → Model (cada um tem sua função)"
-• "HERANÇA: nossas exceções herdam de RuntimeException"
+• "Controller → Service → Model (cada um tem sua função específica)"
+• "Cada classe tem um propósito bem definido"
 
 🛠️ Arquivos para mostrar:
-- UserController.java (recebe requisições)
-- UserService.java (processa lógica)
-- InvalidSerialException.java (herda de RuntimeException)
+- UserController.java (recebe requisições web)
+- UserService.java (processa lógica de negócio)
+- src/main/java/com/example/spcapi/models/Device.java
+- Destacar: cada classe faz uma coisa específica
 
 💡 Frase de exemplo:
 "Controller cuida da web, Service cuida da lógica, Model guarda dados"
+
+====================================================================
+
+👤 MEMBRO 3 - HERANÇA E EXCEÇÕES (3-4 minutos)
+--------------------------------------------------------------------
+🎯 Responsabilidades:
+- Explicar HERANÇA no projeto
+- Mostrar como nossas exceções herdam de classes pai
+- Demonstrar reutilização de código
+
+📝 Pontos-chave para falar:
+• "HERANÇA: classes filhas herdam características das classes pai"
+• "Nossas exceções personalizadas herdam de RuntimeException"
+• "Isso nos dá funcionalidades prontas + nossas personalizações"
+
+🛠️ Arquivos para mostrar:
+- InvalidSerialException.java (extends RuntimeException)
+- MissingTokenException.java (extends RuntimeException)
+- Mostrar que herdam métodos como getMessage()
+
+💡 Frase de exemplo:
+"InvalidSerialException herda tudo de RuntimeException + adiciona nossa lógica"
 
 ====================================================================
 
@@ -157,5 +164,3 @@ R: "Sim, mas mostra claramente os conceitos de POO na prática"
 
 P: "Como validam os dados?"
 R: "Usamos classes específicas com responsabilidades bem definidas"
-
-====================================================================
