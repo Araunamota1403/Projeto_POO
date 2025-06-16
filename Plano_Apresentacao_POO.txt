@@ -26,7 +26,7 @@
 🛠️ O que mostrar:
 - Estrutura de pastas no VS Code
 - Comando: mvn spring-boot:run
-- Browser: http://localhost:8080 (mostrar que está rodando)
+- Browser: http://localhost:3000 (mostrar que está rodando)
 
 ====================================================================
 
